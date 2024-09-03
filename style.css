@@ -188,6 +188,55 @@ p.author a {
     margin-bottom: 13px;
 }
 
+/* Estilo para la sección de paginación */
+.pagination-section {
+    padding: 20px 0; /* Espaciado vertical de la sección de paginación */
+    background-color: #f8f9fa; /* Color de fondo para la sección de paginación */
+    text-align: center; /* Centra el contenido dentro de la sección */
+}
+
+.pagination {
+    list-style: none; /* Elimina el estilo de lista por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margin por defecto */
+    display: inline-block; /* Hace que la lista se ajuste al contenido */
+}
+
+.pagination li {
+    display: inline; /* Muestra los ítems en línea */
+    margin: 0 5px; /* Espaciado horizontal entre los ítems */
+}
+
+.pagination a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    padding: 10px 15px; /* Espaciado interno de los enlaces */
+    color: #007bff; /* Color del texto de los enlaces */
+    border: 1px solid #007bff; /* Borde del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: 700; /* Peso de fuente más pesado */
+}
+
+.pagination a:hover {
+    background-color: #007bff; /* Fondo al pasar el ratón */
+    color: #fff; /* Color del texto al pasar el ratón */
+}
+
+
+/* Estilo para el footer */
+footer {
+    background-color: #e4e4e8; /* Mismo color que el header */
+    padding: 10px 0; /* Espaciado vertical del footer */
+    box-shadow: 0 -7px 8px -3px grey; /* Sombra sutil para el footer */
+    position: relative; /* Asegura que el footer esté en el flujo normal del documento */
+    text-align: center; /* Centra el texto */
+    font-family: system-ui; /* Mismo tipo de letra que el resto */
+    color: #333; /* Color del texto */
+}
+
+footer p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+}
+
 @media (max-width: 768px) {
     .header-section {
         flex-direction: column;
