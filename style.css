@@ -253,3 +253,42 @@ p.author a {
         margin: 0 10px;
     }
 }
+
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: row; /* Cambia la dirección del flex a fila para dispositivos móviles */
+        align-items: center; /* Alinea los items verticalmente al centro */
+        justify-content: center; /* Centra los items horizontalmente */
+        padding: 0 10px; /* Añade algo de padding para evitar que se vean tan apretados */
+    }
+
+    .logo, .cart {
+        transform: scale(1.2); /* Ajusta el tamaño de las imágenes */
+        margin: 0 10px; /* Añade margen horizontal entre las imágenes */
+    }
+
+    header {
+        padding-top: 10px; /* Reduce el padding en la parte superior */
+        padding-bottom: 10px; /* Reduce el padding en la parte inferior */
+        margin-top: 0; /* Asegúrate de que el margin-top no esté causando problemas */
+        box-shadow: none; /* Opcional: puedes eliminar la sombra para reducir la altura visual */
+    }
+    
+    .cart-products {
+        top: 60px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        min-width: auto;
+        padding: 10px;
+    }
+
+    .cart-products .item img {
+        width: 80px;
+    }
+
+    .cart-products .item .item-content {
+        width: auto;
+        margin: 0 10px;
+    }
+}
