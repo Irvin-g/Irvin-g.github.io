@@ -256,39 +256,56 @@ p.author a {
 
 @media (max-width: 768px) {
     .header-section {
-        flex-direction: row; /* Cambia la dirección del flex a fila para dispositivos móviles */
-        align-items: center; /* Alinea los items verticalmente al centro */
-        justify-content: center; /* Centra los items horizontalmente */
-        padding: 0 10px; /* Añade algo de padding para evitar que se vean tan apretados */
+        flex-direction: row; /* Alinea los elementos en fila */
+        justify-content: space-between; /* Distribuye el espacio entre los elementos */
+        padding: 0 8px; /* Ajusta el padding horizontal */
+        align-items: center; /* Asegura que los elementos se alineen verticalmente */
+        position: relative; /* Asegúrate de que el posicionamiento no afecte el contenido */
     }
 
-    .logo, .cart {
-        transform: scale(1.2); /* Ajusta el tamaño de las imágenes */
-        margin: 0 10px; /* Añade margen horizontal entre las imágenes */
+    .logo {
+        width: 60px; /* Reduce aún más el tamaño de la imagen */
+        height: auto; /* Mantén la proporción de la imagen */
+        margin-right: 5px; /* Ajusta el margen derecho */
+        margin-left: 5px; /* Ajusta el margen izquierdo */
+    }
+
+    .cart {
+        width: 40px; /* Reduce aún más el tamaño de la imagen */
+        height: auto; /* Mantén la proporción de la imagen */
+        margin-left: 5px; /* Ajusta el margen izquierdo */
+        margin-right: 5px; /* Ajusta el margen derecho */
     }
 
     header {
-        padding-top: 10px; /* Reduce el padding en la parte superior */
-        padding-bottom: 10px; /* Reduce el padding en la parte inferior */
+        padding-top: 2px; /* Reduce el padding superior */
+        padding-bottom: 2px; /* Reduce el padding inferior */
         margin-top: 0; /* Asegúrate de que el margin-top no esté causando problemas */
-        box-shadow: none; /* Opcional: puedes eliminar la sombra para reducir la altura visual */
+        height: auto; /* Ajusta la altura del header automáticamente según el contenido */
+        min-height: 40px; /* Ajusta la altura mínima del header */
     }
-    
+
     .cart-products {
-        top: 60px;
+        top: 40px; /* Ajusta la posición vertical del carrito */
         right: 0;
         left: 0;
         width: 100%;
         min-width: auto;
-        padding: 10px;
+        padding: 8px; /* Ajusta el padding para evitar el corte del contenido */
+        box-sizing: border-box; /* Asegúrate de que el padding no aumente la altura del contenedor */
+    }
+
+    .cart-products .item {
+        margin-bottom: 8px; /* Ajusta el margen inferior para separarlos mejor */
+        padding-top: 8px; /* Añade padding superior para asegurar que el contenido no esté cortado */
     }
 
     .cart-products .item img {
-        width: 80px;
+        width: 50px; /* Ajusta el tamaño de la imagen en el carrito */
     }
 
     .cart-products .item .item-content {
         width: auto;
-        margin: 0 10px;
+        margin: 0 5px;
     }
 }
