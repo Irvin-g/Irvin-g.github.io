@@ -264,17 +264,17 @@ p.author a {
     }
 
     .logo {
-        width: 60px; /* Reduce aún más el tamaño de la imagen */
+        width: 60px; /* Reduce el tamaño de la imagen */
         height: auto; /* Mantén la proporción de la imagen */
-        margin-right: 5px; /* Ajusta el margen derecho */
-        margin-left: 5px; /* Ajusta el margen izquierdo */
+        margin-right: 0; /* Ajusta el margen derecho para no centrarlo */
+        margin-left: 0; /* Ajusta el margen izquierdo para no centrarlo */
     }
 
     .cart {
-        width: 40px; /* Reduce aún más el tamaño de la imagen */
+        width: 40px; /* Reduce el tamaño de la imagen */
         height: auto; /* Mantén la proporción de la imagen */
-        margin-left: 5px; /* Ajusta el margen izquierdo */
-        margin-right: 5px; /* Ajusta el margen derecho */
+        margin-left: 0; /* Ajusta el margen izquierdo para no centrarlo */
+        margin-right: 0; /* Ajusta el margen derecho para no centrarlo */
     }
 
     header {
